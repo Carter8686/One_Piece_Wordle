@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Piece Guessing Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>One Piece Character Guessing Game</h1>
+
+    <!-- Input form -->
+    <form id="guess-form">
+        <input type="text" id="guess" placeholder="Enter character name" required>
+        <button type="submit">Submit</button>
+    </form>
+<div id="controls">
+  <button id="newRoundBtn">New Round</button>
+</div>
+    <!-- Column titles -->
+    <div id="titles">
+    <div class="title-box">Name</div>
+    <div class="title-box">Gender</div>
+    <div class="title-box">First Arc</div>
+    <div class="title-box">Affiliation</div>
+    <div class="title-box">Bounty</div>
+    <div class="title-box">Height</div>
+    <div class="title-box">Devil Fruit</div>
+    <div class="title-box">Haki</div>
+</div>
+
+
+<!-- Container for all guess rows -->
+<div id="guess-container"></div>
+
+    <div id="result"></div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

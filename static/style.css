@@ -1,0 +1,111 @@
+#titles, .guess-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#newRoundBtn {
+    padding: 8px 16px;
+    font-size: 16px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.title-box, .attribute-box {
+    width: 90px;
+    height: 90px;
+    margin-right: 5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: bold;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+
+
+}
+
+.correct { background-color: #4CAF50; color: white; }
+.incorrect { background-color: #F44336; color: white; }
+.partial { background-color: #FFEB3B; color: black; }
+.higher, .lower { background-color: #FFEB3B; color: black; }
+.earlier, .later { background-color: #FFEB3B; color: black; }
+
+
+.attribute-box::after {
+    content: '';
+}
+
+/*bount+height*/
+
+/* Up arrow */
+.attribute-box.higher::after {
+    content: '↑';
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    z-index: 0;
+}
+
+
+/* Down arrow */
+.attribute-box.lower::after {
+    content: '↓';
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    z-index: 0;
+}
+ /* Button */
+#controls {
+    margin-top: 15px;
+}
+/*first_arcs*/
+.attribute-box.later::after {
+    content: "↓";  /* guessed too early */
+    opacity: 0.5;
+    font-size: 40px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.attribute-box.earlier::after {
+    content: "↑";  /* guessed too late */
+    opacity: 0.5;
+    font-size: 40px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+#newRoundBtn:hover {
+    background: #1976D2;
+}
+
+.attribute-box.correct::after,
+.attribute-box.incorrect::after { opacity: 0.3; }
+
+.attribute-box span {
+    position: relative;
+    z-index: 1;
+}
