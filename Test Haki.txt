@@ -1,0 +1,5 @@
+name,first_arc,crew_or_affiliation,bounty,height,devilFruitType,haki
+Monkey D. Luffy,Romance Dawn,Straw Hat Pirates,3000000000,1.74,Paramecia,Observation; Armament; Conqueror's
+Nami,Orange Town,Straw Hat Pirates,366000000,1.70,None,None
+Usopp,Syrup Village,Straw Hat Pirates,500000000,1.76,None,Observation
+Sanji,Baratie,Straw Hat Pirates,1032000000,1.80,None,Observation; Armament
