@@ -34,11 +34,11 @@
 
 }
 
-.correct { background-color: #4CAF50; color: white; }
-.incorrect { background-color: #F44336; color: white; }
+.correct { background-color: #4CAF50; color: black; }
+.incorrect { background-color: #F44336; color: black; }
 .partial { background-color: #FFEB3B; color: black; }
-.higher, .lower { background-color: #FFEB3B; color: black; }
-.earlier, .later { background-color: #FFEB3B; color: black; }
+.higher, .lower { background-color: #F44336; color: black; }
+.earlier, .later { background-color: #F44336; color: black; }
 
 
 .attribute-box::after {
@@ -55,7 +55,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: 0;
 }
 
@@ -68,7 +68,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: 0;
 }
  /* Button */
@@ -77,7 +77,7 @@
 }
 /*first_arcs*/
 .attribute-box.later::after {
-    content: "↓";  /* guessed too early */
+    content: "↑";  /* guessed too early */
     opacity: 0.5;
     font-size: 40px;
     position: absolute;
@@ -87,7 +87,7 @@
 }
 
 .attribute-box.earlier::after {
-    content: "↑";  /* guessed too late */
+    content: "↓";  /* guessed too late */
     opacity: 0.5;
     font-size: 40px;
     position: absolute;
@@ -109,3 +109,54 @@
     position: relative;
     z-index: 1;
 }
+
+#suggestions {
+  border: 1px solid #ccc;
+  background: white;
+  position: absolute;
+  z-index: 10;
+  max-height: 200px;  /* maximum height */
+  overflow-y: auto;   /* add scrolling */
+  width: 100%;        /* match input width */
+}
+
+.suggestion span.match {
+    font-weight: bold;
+    color: #2196F3;  /* blue highlight, you can change */
+}
+
+.suggestion:hover {
+  background: #eee;
+}
+
+#guess-container-wrapper {
+    max-height: 60vh; /* max height relative to viewport */
+    overflow-y: auto; /* enable vertical scrolling */
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+#guess-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.reveal-box {
+  margin-top: 15px;
+  padding: 12px;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.berry-icon {
+  width: 14px;       /* adjust size */
+  height: 14px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+

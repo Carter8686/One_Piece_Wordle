@@ -10,11 +10,16 @@
 
     <!-- Input form -->
     <form id="guess-form">
-        <input type="text" id="guess" placeholder="Enter character name" required>
-        <button type="submit">Submit</button>
-    </form>
+  <div class="autocomplete">
+    <input type="text" id="guess" placeholder="Enter character name" autocomplete="off" required>
+    <div id="suggestions"></div>
+  </div>
+  <button type="submit">Submit</button>
+</form>
 <div id="controls">
   <button id="newRoundBtn">New Round</button>
+<button id="revealBtn">Reveal</button>
+
 </div>
     <!-- Column titles -->
     <div id="titles">
@@ -22,10 +27,15 @@
     <div class="title-box">Gender</div>
     <div class="title-box">First Arc</div>
     <div class="title-box">Affiliation</div>
-    <div class="title-box">Bounty</div>
-    <div class="title-box">Height</div>
+<div class="title-box">
+<img src="/static/Berrysymbol.svg" alt="Berry" class="berry-icon">
+  Bounty
+</div>    <div class="title-box">Height</div>
     <div class="title-box">Devil Fruit</div>
     <div class="title-box">Haki</div>
+</div>
+<div id="guess-container-wrapper">
+    <div id="guess-container"></div>
 </div>
 
 
@@ -37,3 +47,5 @@
     <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
+
+
