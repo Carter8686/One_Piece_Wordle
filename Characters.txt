@@ -13,7 +13,7 @@ Shanks,Male,Romance Dawn,Red Hair Pirates,4000000000,1.90,None,Observation; Arma
 Marshall D. Teach,Male,Jaya,Blackbeard Pirates,4000000000,1.88,Logia,Observation; Armament; Conqueror's
 Buggy,Male,Orange Town,Cross Guild,3000000000,1.95,Paramecia,None
 Dracule Mihawk,Male,Baratie,Cross Guild,3600000000,1.98,None,Observation; Armament
-Donquixote Doflamingo,Male,Jaya,Donquixote Pirates,3400000000,1.90,Paramecia,Observation; Armament
+Donquixote Doflamingo,Male,Jaya,Donquixote Pirates,340000000,1.90,Paramecia,Observation; Armament
 Crocodile,Male,Alabasta,Cross Guild,1900000000,1.95,Logia,Observation; Armament
 Boa Hancock,Female,Amazon Lily,Kuja Pirates,2200000000,1.91,Logia,Observation; Armament; Conqueror's
 Trafalgar D. Water Law,Male,Sabaody Archipelago,Heart Pirates,3000000000,1.78,Paramecia,Observation
@@ -26,9 +26,9 @@ Sabo,Male,Post-War,Revolutionary Army,602000000,1.88,Logia,Observation; Armament
 Killer,Male,Sabaody Archipelago,Kid Pirates,470000000,1.82,Zoan,Observation; Armament
 Magellan,Male,Impel Down,Impel Down,550000000,2.15,Paramecia,Observation; Armament
 Hina,Female,Marineford,Marine,40000000,1.72,Paramecia,Observation
-Monkey D. Garp,Male,East Blue,Marine,3000000000,1.95,None,Observation; Armament; Conqueror's
-Kaido,Male,Wano Country,Beasts Pirates,4600000000,7.10,Zoan,Observation; Armament; Conqueror's
-Big Mom,Female,Whole Cake Island,Big Mom Pirates,4380000000,8.80,Paramecia,Observation; Armament; Conqueror's
+Monkey D. Garp,Male,Arlong Park,Marine,3000000000,1.95,None,Observation; Armament; Conqueror's
+Kaido,Male,Dressrosa,Beasts Pirates,4600000000,7.10,Zoan,Observation; Armament; Conqueror's
+Big Mom,Female,Fishman Island,Big Mom Pirates,4380000000,8.80,Paramecia,Observation; Armament; Conqueror's
 Yamato,Female,Wano Country,Beasts Pirates,0,2.63,Zoan,Observation; Armament; Conqueror's
 King,Male,Wano Country,Beasts Pirates,1390000000,2.13,Zoan,Observation; Armament
 Sentomaru,Male,Sabaody Archipelago,Marine,0,2.40,None,Armament
@@ -41,7 +41,7 @@ Rob Lucci,Male,Water 7,CP0,0,2.00,Zoan,Observation; Armament
 Kaku,Male,Water 7,CP0,0,1.93,Zoan,Observation; Armament
 Enel,Male,Skypiea,Skypiea,0,2.66,Logia,None
 Carrot,Female,Zou,Minks,0,1.61,None,Observation
-Fujitora (Issho),Male,Dressrosa,Marine,0,2.70,Paramecia,Observation; Armament
+Fujitora (Issho),Male,Dressrosa,Marine,3000000000,2.70,Paramecia,Observation; Armament
 Perona,Female,Thriller Bark,Thriller Bark Pirates,0,1.60,Paramecia,None
 Urouge,Male,Sabaody Archipelago,Fallen Monk Pirates,0,2.40,Paramecia,Observation
 X Drake,Male,Sabaody Archipelago,Marine,222000000,2.33,Zoan,Observation; Armament
@@ -49,22 +49,22 @@ Scratchmen Apoo,Male,Sabaody Archipelago,On Air Pirates,350000000,2.56,Paramecia
 Gol D. Roger,Male,Romance Dawn,Roger Pirates,5600000000,2.74,None,Observation; Armament; Conqueror's
 Silvers Rayleigh,Male,Orange Town,Roger Pirates,0,1.88,None,Observation; Armament; Conqueror's
 Whitebeard,Male,Alabasta,Whitebeard Pirates,5000000000,6.60,Paramecia,Observation; Armament; Conqueror's
-Marco,Male,Marineford,Whitebeard Pirates,1374000000,2.03,Zoan,Observation; Armament
+Marco,Male,Jaya,Whitebeard Pirates,1374000000,2.03,Zoan,Observation; Armament
 Izo,Male,Marineford,Whitebeard Pirates,0,1.86,None,Observation; Armament
 Vista,Male,Marineford,Whitebeard Pirates,0,1.87,None,Observation; Armament
 Oden Kozuki,Male,Wano Country,Kozuki Clan,0,3.82,None,Observation; Armament; Conqueror's
-Toki Kozuki,Female,Wano Country,Kozuki Clan,0,0,Paramecia,None
+Toki Kozuki,Female,Wano Country,Kozuki Clan,0,1.9,Paramecia,None
 Kin'emon,Male,Punk Hazard,Kozuki Clan,0,2.95,Paramecia,Observation; Armament
 Denjiro,Male,Wano Country,Kozuki Clan,0,2.85,None,Observation; Armament
-Kanjuro,Male,Dressrosa,Kozuki Clan,0,1.80,Paramecia,Observation; Armament
-Raizo,Male,Zou,Kozuki Clan,0,1.78,None,Observation; Armament
+Kanjuro,Male,Dressrosa,Kurozumi Clan,0,1.80,Paramecia,Observation; Armament
+Raizo,Male,Zou,Kozuki Clan,0,1.78,Paramecia,Observation; Armament
 Ashura Doji,Male,Wano Country,Kozuki Clan,0,3.60,None,Observation; Armament
 Kawamatsu,Male,Wano Country,Kozuki Clan,0,2.39,None,Observation; Armament
 Inuarashi (Dogstorm),Male,Zou,Minks,0,3.00,None,Observation; Armament
 Nekomamushi (Catviper),Male,Zou,Minks,0,3.00,None,Observation; Armament
-Pedro,Male,Whole Cake Island,Minks,0,2.33,None,Observation; Armament
-Pekoms,Male,Whole Cake Island,Big Mom Pirates,0,1.99,Zoan,Observation; Armament
-Tamago,Male,Whole Cake Island,Big Mom Pirates,0,2.40,Zoan,Observation; Armament
+Pedro,Male,Zou,Minks,0,2.33,None,Observation; Armament
+Pekoms,Male,FishMan Island,Big Mom Pirates,330000000,1.99,Zoan,Observation; Armament
+Tamago,Male,FishMan Island,Big Mom Pirates,429000000,2.40,Zoan,Observation; Armament
 Smoothie,Female,Whole Cake Island,Big Mom Pirates,932000000,4.60,Paramecia,Observation; Armament
 Daifuku,Male,Whole Cake Island,Big Mom Pirates,0,3.05,Paramecia,Observation; Armament
 Oven,Male,Whole Cake Island,Big Mom Pirates,0,3.05,Paramecia,Observation; Armament
@@ -75,28 +75,80 @@ Ulti,Female,Wano Country,Beasts Pirates,0,1.73,Zoan,Observation; Armament
 Black Maria,Female,Wano Country,Beasts Pirates,0,3.80,Zoan,Observation; Armament
 Sasaki,Male,Wano Country,Beasts Pirates,0,2.80,Zoan,Observation; Armament
 Who's Who,Male,Wano Country,Beasts Pirates,0,2.63,Zoan,Observation; Armament
-Koby,Male,Marineford,Marine,0,1.67,None,Observation; Armament
-Helmeppo,Male,Shells Town,Marine,0,1.79,None,Armament
+Koby,Male,Romance Dawn,Marine,3000000000,1.67,None,Observation; Armament
+Helmeppo,Male,Romance Dawn,Marine,0,1.79,None,Armament
 Smoker,Male,Loguetown,Marine,0,1.88,Logia,Observation; Armament
 Tashigi,Female,Loguetown,Marine,0,1.70,None,Observation; Armament
 Vergo,Male,Punk Hazard,Donquixote Pirates,0,1.98,None,Observation; Armament
 Monet,Female,Punk Hazard,Donquixote Pirates,0,2.27,Logia,None
 Caesar Clown,Male,Punk Hazard,Independent,0,2.40,Logia,None
-Vegapunk,Male,Egghead,World Government,0,0,Paramecia,None
-Stussy,Female,Egghead,CP0,0,1.79,Zoan,Observation; Armament
-York,Female,Egghead,World Government,0,0,None,None
-Pudding,Female,Whole Cake Island,Big Mom Pirates,0,1.66,None,None
-Capone Bege,Male,Zou,Fire Tank Pirates,300000000,1.66,Paramecia,Observation; Armament
+Vegapunk,Male,Egghead,World Government,0,3.1,Paramecia,None
+Stussy,Female,Whole Cake Isalnd,CP0,0,1.79,Zoan,Observation; Armament
+York,Female,Egghead,World Government,0,4.8,None,None
+Pudding,Female,Fishman Island,Big Mom Pirates,0,1.66,None,None
+Capone Bege,Male,Sabaody Archipelago,Fire Tank Pirates,300000000,1.66,Paramecia,Observation; Armament
 Vito,Male,Zou,Fire Tank Pirates,0,2.40,None,None
 Gotti,Male,Zou,Fire Tank Pirates,0,2.60,None,None
-Hajrudin,Male,Dressrosa,Straw Hat Grand Fleet,0,2.60,None,None
+Hajrudin,Male,Dressrosa,Straw Hat Grand Fleet,0,22,None,None
 Cavendish,Male,Dressrosa,Straw Hat Grand Fleet,0,1.83,Paramecia,Observation
 Bartolomeo,Male,Dressrosa,Straw Hat Grand Fleet,200000000,2.20,Paramecia,None
 Don Sai,Male,Dressrosa,Straw Hat Grand Fleet,0,2.60,None,Observation; Armament
 Ideo,Male,Dressrosa,Straw Hat Grand Fleet,0,2.40,None,None
 Leo,Male,Dressrosa,Straw Hat Grand Fleet,0,0.23,Paramecia,None
-
-
-
+Alvida,Female,Romance Dawn,Cross Guild,5000000,1.98,Paramecia,None
+Captain Kuro,Male,Syrup Village,Black Cat Pirates,16000000,2.07,None,None
+Don Krieg,Male,Baratie,Don Krieg Pirates,17000000,2.43,None,None
+Jango,Male,Syrup Village,Black Cat Pirates,1000000,2.07,None,None
+Galdino (Mr. 3),Male,Little Garden,Cross Guild,24000000,1.79,Paramecia,None
+Daz Bones (Mr. 1),Male,Baroque Works,Cross Guild,75000000,2.12,Paramecia,None
+Bon Clay (Mr. 2),Male,Little Garden,Newkama Land,0,2.38,Paramecia,None
+Crocus,Male,Reverse Mountain,Roger Pirates,0,2.03,None,None
+Dr. Kureha,Female,Drum Island,Sakura Kingdom,0,1.88,None,None
+Hiriluk,Male,Drum Island,None,0,2.13,None,None
+Wapol,Male,Drum Island,Evil Black Drum Kingdom,0,2.07,None,None
+Pell,Male,Alabasta,Arabasta Royal Guard,0,1.89,Zoan,Observation
+Nefertari Cobra,Male,Alabasta,Arabasta Kingdom,0,1.90,None,None
+Blueno,Male,Water 7,CP0,0,2.58,Paramecia,Observation; Armament
+Kalifa,Female,Water 7,CP0,0,1.85,Paramecia,Observation; Armament
+Fukurou,Male,Enies Lobby,CP0,0,3.31,None,Observation; Armament
+Jabra,Male,Enies Lobby,CP0,0,2.13,None,Observation; Armament
+Spandam,Male,Enies Lobby,CP0,0,1.70,None,None
+Foxy,Male,Long Ring Long Land,Foxy Pirates,24000000,1.85,Paramecia,None
+Vander Decken IX,Male,Fishman Island,Flying Pirates,0,2.78,Paramecia,None
+Rebecca,Female,Dressrosa,Dressrosa,0,1.68,None,Observation
+Kyros,Male,Dressrosa,Dressrosa,0,2.18,None,
+Donquixote Rosinante (Corazon),Male,Dressrosa,Marines,0,1.80,Paramecia,None
+Baby 5,Female,Dressrosa,Donquixote Pirates,0,1.73,Paramecia,None
+Trebol,Male,Dressrosa,Donquixote Pirates,99000000,2.40,Paramecia,None
+Sugar,Female,Dressrosa,Donquixote Pirates,0,1.55,Paramecia,None
+Vinsmoke Judge,Male,Whole Cake Island,Germa 66,0,2.15,None,Armament
+Vinsmoke Ichiji,Male,Whole Cake Island,Germa 66,0,1.90,None,None
+Vinsmoke Niji,Male,Whole Cake Island,Germa 66,0,1.95,None,None
+Vinsmoke Yonji,Male,Whole Cake Island,Germa 66,0,1.88,None,None
+Bellamy,Male,Jaya,Donquixote Pirates,195000000,1.82,Paramecia,None
+Orlumbus,Male,Dressrosa,Straw Hat Grand Fleet,148000000,2.65,None,None
+Tom,Male,Water 7,Tom's Workers,0,3.03,None,None
+Iceburg,Male,Water 7,Galley-La Company,0,1.99,None,None
+Kokoro,Female,Water 7,Tom's Workers,0,1.67,None,None
+Momonosuke,Male,Punk Hazard,Kozuki Clan,0,1.62,Zoan,None
+Kiku (Kikunojo),Female,Wano Country,Kozuki Clan,0,1.95,None,Observation; Armament
+Kurozumi Orochi,Male,Wano Country,Kurozumi Clan,0,1.74,Zoan,None
+Dorry,Male,Little Garden,Giant Warriors Pirates,1800000000,21.3,None,None
+Brogy,Male,Little Garden,Giant Warriors Pirates,1800000000,22.6,None,None
+Saul,Male,Enies Lobby,Marines,0,20,None,None
+Gecko Moria,Male,Thriller Bark,Thriller Bark Pirates,320000000,6.9,Paramecia,None
+Perospero,Male,Whole Cake Island,Big Mom Pirates,700000000,2.97,Paramecia,None
+Senor Pink,Male,Dressrosa,Donquixote Pirates,58000000,2.30,Paramecia,None
+Dellinger,Male,Dressrosa,Donquixote Pirates,15000000,2.04,None,None
+Diamante,Male,Dressrosa,Donquixote Pirates,99000000,2.12,Paramecia,None
+Pica,Male,Dressrosa,Donquixote Pirates,99000000,3.25,Paramecia,None
+Jesus Burgess,Male,Jaya,Blackbeard Pirates,0,2.20,Zoan,None
+Kuroobi,Male,Arlong Park,Arlong Pirates,9000000,2.52,None,None
+Chew,Male,Arlong Park,Arlong Pirates,5500000,2.35,None,None
+Nojiko,Female,Arlong Park,Cocoyasi Village,0,1.70,None,None
+Bell-mère,Female,Arlong Park,Marines,0,1.86,None,None
+Captain Axe-Hand Morgan,Male,Romance Dawn,Marines,0,2.85,None,None
+Jozu,Male,Jaya,Whitebeard Pirates,1300000000,3.10,Paramecia,Observation; Armament
+Vista,Male,Marineford,Whitebeard Pirates,0,1.87,None,Observation; Armament
 
 

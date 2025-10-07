@@ -1,3 +1,5 @@
+/* static/style.css */
+
 #titles, .guess-row {
     display: flex;
     margin-bottom: 5px;
@@ -14,7 +16,7 @@
 }
 
 .title-box, .attribute-box {
-    width: 90px;
+    width: 110px;
     height: 90px;
     margin-right: 5px;
     text-align: center;
@@ -30,8 +32,6 @@
     overflow-wrap: break-word;
     word-wrap: break-word;
     white-space: normal;
-
-
 }
 
 .correct { background-color: #4CAF50; color: black; }
@@ -40,14 +40,9 @@
 .higher, .lower { background-color: #F44336; color: black; }
 .earlier, .later { background-color: #F44336; color: black; }
 
+.attribute-box::after { content: ''; }
 
-.attribute-box::after {
-    content: '';
-}
-
-/*bount+height*/
-
-/* Up arrow */
+/* Up arrow for higher */
 .attribute-box.higher::after {
     content: '↑';
     font-size: 80px;
@@ -59,8 +54,7 @@
     z-index: 0;
 }
 
-
-/* Down arrow */
+/* Down arrow for lower */
 .attribute-box.lower::after {
     content: '↓';
     font-size: 80px;
@@ -71,13 +65,11 @@
     opacity: 0.3;
     z-index: 0;
 }
- /* Button */
-#controls {
-    margin-top: 15px;
-}
-/*first_arcs*/
+
+#controls { margin-top: 15px; }
+
 .attribute-box.later::after {
-    content: "↑";  /* guessed too early */
+    content: "↑";
     opacity: 0.5;
     font-size: 40px;
     position: absolute;
@@ -87,7 +79,7 @@
 }
 
 .attribute-box.earlier::after {
-    content: "↓";  /* guessed too late */
+    content: "↓";
     opacity: 0.5;
     font-size: 40px;
     position: absolute;
@@ -96,42 +88,30 @@
     transform: translateY(-50%);
 }
 
-
-
-#newRoundBtn:hover {
-    background: #1976D2;
-}
-
-.attribute-box.correct::after,
-.attribute-box.incorrect::after { opacity: 0.3; }
-
-.attribute-box span {
-    position: relative;
-    z-index: 1;
-}
+#newRoundBtn:hover { background: #1976D2; }
+.attribute-box.correct::after, .attribute-box.incorrect::after { opacity: 0.3; }
+.attribute-box span { position: relative; z-index: 1; }
 
 #suggestions {
   border: 1px solid #ccc;
   background: white;
   position: absolute;
   z-index: 10;
-  max-height: 200px;  /* maximum height */
-  overflow-y: auto;   /* add scrolling */
-  width: 100%;        /* match input width */
+  max-height: 200px;
+  overflow-y: auto;
+  width: 250px;
 }
 
-.suggestion span.match {
+.suggestion .match {
     font-weight: bold;
-    color: #2196F3;  /* blue highlight, you can change */
+    color: #2196F3;
 }
 
-.suggestion:hover {
-  background: #eee;
-}
+.suggestion:hover { background: #eee; }
 
 #guess-container-wrapper {
-    max-height: 60vh; /* max height relative to viewport */
-    overflow-y: auto; /* enable vertical scrolling */
+    max-height: 60vh;
+    overflow-y: auto;
     margin-top: 10px;
     border: 2px solid #ccc;
     padding: 5px;
@@ -139,11 +119,7 @@
     background: #f9f9f9;
 }
 
-#guess-container {
-    display: flex;
-    flex-direction: column;
-}
-
+#guess-container { display: flex; flex-direction: column; }
 
 .reveal-box {
   margin-top: 15px;
@@ -154,9 +130,14 @@
 }
 
 .berry-icon {
-  width: 14px;       /* adjust size */
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 4px;
   vertical-align: middle;
 }
 
+/* small responsive adjustments */
+@media (max-width: 800px) {
+  .title-box, .attribute-box { width: 85px; font-size: 12px; }
+  #suggestions { width: 80%; }
+}

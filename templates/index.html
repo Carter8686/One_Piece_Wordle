@@ -1,3 +1,4 @@
+<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,44 +9,63 @@
 <body>
     <h1>One Piece Character Guessing Game</h1>
 
-    <!-- Input form -->
+    <!-- Lobby / multiplayer -->
+    <div id="lobby">
+        <button id="createRoomBtn">Create Multiplayer Room</button>
+        <button id="joinRoomBtn">Join Multiplayer Room</button>
+        <span id="roomInfo"></span>
+        <div id="playersList"></div>
+    </div>
+
+    <!-- Single-player / guess form -->
     <form id="guess-form">
-  <div class="autocomplete">
-    <input type="text" id="guess" placeholder="Enter character name" autocomplete="off" required>
-    <div id="suggestions"></div>
-  </div>
-  <button type="submit">Submit</button>
-</form>
-<div id="controls">
-  <button id="newRoundBtn">New Round</button>
-<button id="revealBtn">Reveal</button>
+      <div class="autocomplete">
+        <input type="text" id="guess" name="guess" placeholder="Enter character name" autocomplete="off" required>
+        <div id="suggestions"></div>
+      </div>
+      <input type="hidden" id="roomIdInput" name="room_id" value="">
+      <button type="submit">Submit Guess</button>
+    </form>
 
-</div>
-    <!-- Column titles -->
+    <!-- Controls -->
+    <div id="controls">
+      <button id="newRoundBtn">New Round</button>
+      <button id="revealBtn">Reveal Character</button>
+    </div>
+
+    <!-- Multiplayer controls -->
+    <div id="multiplayer-controls">
+      <button id="startGameBtn">Start Game (owner)</button>
+      <button id="setModeBtn">Set Mode</button>
+      <button id="skipBtn">Skip Character</button>
+      <div id="timer">Time: 0s</div>
+      <div id="leaderboard"></div>
+    </div>
+
+    <!-- Guess table headers -->
     <div id="titles">
-    <div class="title-box">Name</div>
-    <div class="title-box">Gender</div>
-    <div class="title-box">First Arc</div>
-    <div class="title-box">Affiliation</div>
-<div class="title-box">
-<img src="/static/Berrysymbol.svg" alt="Berry" class="berry-icon">
-  Bounty
-</div>    <div class="title-box">Height</div>
-    <div class="title-box">Devil Fruit</div>
-    <div class="title-box">Haki</div>
-</div>
-<div id="guess-container-wrapper">
-    <div id="guess-container"></div>
-</div>
+      <div class="title-box">Name</div>
+      <div class="title-box">Gender</div>
+      <div class="title-box">First Arc</div>
+      <div class="title-box">Affiliation</div>
+      <div class="title-box">
+        <img src="{{ url_for('static', filename='berrysymbol.svg') }}" alt="Berry" class="berry-icon"> Bounty
+      </div>
+      <div class="title-box">Height</div>
+      <div class="title-box">Devil Fruit</div>
+      <div class="title-box">Haki</div>
+    </div>
 
-
-<!-- Container for all guess rows -->
-<div id="guess-container"></div>
+    <!-- Guess results container -->
+    <div id="guess-container-wrapper">
+        <div id="guess-container"></div>
+    </div>
 
     <div id="result"></div>
 
+    <!-- Socket.IO client -->
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+    <!-- main app JS -->
     <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
-
-
